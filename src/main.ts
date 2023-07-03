@@ -17,8 +17,6 @@ async function run() {
 
     let hasErrors;
     core.startGroup("Commit messages:");
-    core.info("TEST");
-
     for (let i = 0; i < extractedCommits.length; i++) {
         let commit = extractedCommits[i];
         if (isValidCommitMessage(commit.message)) {
