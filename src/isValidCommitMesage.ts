@@ -13,7 +13,8 @@ const DEFAULT_COMMIT_TYPES = [
     "merge",
     "update",
     "wip",
-    "Update: "
+    "Update: ",
+    "Initial: "
 ];
 
 const isValidCommitMessage = (message, availableTypes = DEFAULT_COMMIT_TYPES): boolean => {
