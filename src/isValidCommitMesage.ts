@@ -13,7 +13,6 @@ const DEFAULT_COMMIT_TYPES = [
     "merge",
     "update",
     "wip",
-    "Update: ",
     "Initial: ",
     "initial"
 ];
