@@ -14,7 +14,7 @@ const DEFAULT_COMMIT_TYPES = [
     "update",
     "wip",
     "Update ",
-    "Initial: "
+    "Initial commit"
 ];
 
 const isValidCommitMessage = (message, availableTypes = DEFAULT_COMMIT_TYPES): boolean => {
