@@ -17,15 +17,26 @@ async function run() {
 
     let hasErrors;
     core.startGroup("Commit messages:");
-    for (let i = 0; i < extractedCommits.length; i++) {
-        let commit = extractedCommits[i];
-        if (isValidCommitMessage(commit.message)) {
-            core.info(`✅ ${commit.message}`);
-        } else {
-            core.info(`🚩 ${commit.message}`);
-            hasErrors = true;
-        }
+    // I will keep this code here for people that maybe want to check all the comments
+    // for (let i = 0; i < extractedCommits.length; i++) {
+    //     let commit = extractedCommits[i];
+    //     if (isValidCommitMessage(commit.message)) {
+    //         core.info(`✅ ${commit.message}`);
+    //     } else {
+    //         core.info(`🚩 ${commit.message}`);
+    //         hasErrors = true;
+    //     }
+    // }
+
+    // Check ONLY the latest commit
+    let commit = extractedCommits[extractedCommits.length - 1];
+    if (isValidCommitMessage(commit.message)) {
+        core.info(`✅ ${commit.message}`);
+    } else {
+        core.info(`🚩 ${commit.message}`);
+        hasErrors = true;
     }
+
     core.endGroup();
 
     if (hasErrors) {
