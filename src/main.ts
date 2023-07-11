@@ -33,7 +33,7 @@ async function run() {
     if (isValidCommitMessage(commit.message)) {
         core.info(`✅ ${commit.message}`);
     } else {
-        core.info(`🚩 ${commit.message}`); 
+        core.info(`🚩 ${commit.message}`);
         hasErrors = true;
     }
 
