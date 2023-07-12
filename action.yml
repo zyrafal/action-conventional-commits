@@ -6,5 +6,15 @@ inputs:
     required: false
 runs:
   using: 'node16'
-  main: 'src/index.mjs'
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
+    - name: Install dependencies
+      shell: bash
+      run: npm install
+
+    - name: Run action
+      shell: bash
+      run: |
+        yes | npx tsx ./src/main.ts
