@@ -6,4 +6,4 @@ inputs:
     required: false
 runs:
   using: 'node16'
-  main: 'yes | npx tsx ./src/main.ts'
+  main: 'dist/main/index.js'
