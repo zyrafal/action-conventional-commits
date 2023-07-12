@@ -17,5 +17,6 @@ runs:
       run: npm run build
     - name: Execute main script
       run: npx ts-node ./src/main.ts
+      shell: bash
   pre:
     - rm -rf dist/
