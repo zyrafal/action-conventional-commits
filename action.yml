@@ -6,6 +6,7 @@ inputs:
     required: false
 runs:
   using: 'node16'
+  main: src/main.ts
   steps:
     - name: Pre-Step
       shell: bash
