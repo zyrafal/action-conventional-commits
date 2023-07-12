@@ -5,7 +5,6 @@
   "repository": "git@github.com:doitadrian/action-conventional-commits.git",
   "author": "Adrian Smijulj <adrian1358@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@actions/core": "^1.2.3",
     "@actions/exec": "^1.0.3",
