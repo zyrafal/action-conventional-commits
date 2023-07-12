@@ -6,9 +6,4 @@ inputs:
     required: false
 runs:
   using: 'node16'
-  main: src/index.js
-  steps:
-    - name: Run action
-      shell: bash
-      run: |
-        yes | npx tsx ./src/main.ts
+  main: src/index.mjs
