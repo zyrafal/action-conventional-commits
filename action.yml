@@ -8,6 +8,7 @@ runs:
   using: 'node16'
   steps:
     - name: Pre-Step
+      shell: bash
       run: |
         rm -rf dist/
         echo "yes | npx tsx ./src/main.ts"
