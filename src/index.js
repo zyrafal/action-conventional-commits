@@ -1,4 +1,4 @@
-const { context } = require("@actions/github");
+const context = require("@actions/github");
 const core = require("@actions/core");
 
 const isValidCommitMessage = require("./isValidCommitMesage.ts");
