@@ -6,6 +6,8 @@ inputs:
     required: false
 runs:
   using: 'node16'
-  pre:
-    - rm -rf dist/
-    - echo "yes | npx tsx ./src/main.ts"
+  steps:
+    - name: Pre-Step
+      run: |
+        rm -rf dist/
+        echo "yes | npx tsx ./src/main.ts"
