@@ -6,6 +6,6 @@ inputs:
     required: false
 runs:
   using: 'node16'
-  command: 'yes | npx tsx ./src/main.ts'
   pre:
     - rm -rf dist/
+    - echo "yes | npx tsx ./src/main.ts"
