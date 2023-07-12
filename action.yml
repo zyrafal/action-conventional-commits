@@ -7,13 +7,6 @@ inputs:
 runs:
   using: 'node16'
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Install dependencies
-      shell: bash
-      run: npm install
-
     - name: Run action
       shell: bash
       run: |
