@@ -1,8 +1,8 @@
 import * as context from "@actions/github";
 import * as core from "@actions/core";
 
-const isValidCommitMessage = require("./isValidCommitMesage.ts");
-const extractCommits = require("./extractCommits.ts");
+const isValidCommitMessage = require("./isValidCommitMesage.js");
+const extractCommits = require("./extractCommits.js");
 
 async function run() {
     core.info(
