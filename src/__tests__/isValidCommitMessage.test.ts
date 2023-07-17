@@ -1,4 +1,4 @@
-import isValidCommitMessage from "../isValidCommitMesage.js";
+import isValidCommitMessage from "../isValidCommitMesage";
 
 test("should be able to correctly validate the commit message", () => {
     expect(isValidCommitMessage("chore(nice-one): doing this right")).toBe(true);

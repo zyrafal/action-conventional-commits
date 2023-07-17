@@ -37633,7 +37633,7 @@ var __webpack_exports__ = {};
 // ESM COMPAT FLAG
 __nccwpck_require__.r(__webpack_exports__);
 
-;// CONCATENATED MODULE: ./src/isValidCommitMesage.js
+;// CONCATENATED MODULE: ./src/isValidCommitMesage.ts
 const DEFAULT_COMMIT_TYPES = [
     "feat",
     "fix",
