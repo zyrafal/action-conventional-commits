@@ -5,7 +5,5 @@ inputs:
     description: 'GitHub token'
     required: false
 runs:
-  using: 'node16'
-  command: 'yes | npx tsx ./src/main.ts'
-  pre:
-    - rm -rf dist/
+  using: node16
+  main: dist/main/index.js
