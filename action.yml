@@ -5,5 +5,5 @@ inputs:
     description: 'GitHub token'
     required: false
 runs:
-  using: 'node16'
-  main: 'src/main.ts'
+  using: node16
+  main: src/index.js
