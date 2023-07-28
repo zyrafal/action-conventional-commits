@@ -1,4 +1,3 @@
-# Remove dist
 rm -rf ./dist
 yarn install --loglevel=error
 
