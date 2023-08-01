@@ -5,5 +5,18 @@ inputs:
     description: 'GitHub token'
     required: false
 runs:
-  using: node16
-  main: dist/main/index.js
+  using: "composite"
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: "18.14.1"
+    - name: Git clone action-conventional-commits repo to the home directory
+      run: cd ~ && git clone https://github.com/ubiquity/action-conventional-commits
+      shell: bash
+    - name: Install dependencies
+      run: cd ~/action-conventional-commits && yarn install
+      shell: bash
+    - name: Check commit messages
+      run: npx tsx ~/action-conventional-commits/src/main.ts
+      shell: bash
