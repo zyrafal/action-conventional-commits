@@ -12,7 +12,7 @@ runs:
       with:
         node-version: "18.14.1"
     - name: Git clone action-conventional-commits repo to the home directory
-      run: cd ~ && git clone https://github.com/rndquu/action-conventional-commits
+      run: cd ~ && git clone https://github.com/ubiquity/action-conventional-commits
       shell: bash
     - name: Install dependencies
       run: cd ~/action-conventional-commits && yarn install
